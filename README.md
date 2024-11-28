@@ -13,6 +13,10 @@ Based on this framework, the symbol localization pretext task and language model
 
 
 ## Framework
+<figure>
+    <img src="framework.png" alt="framework">
+    <figcaption>The proposed HMER model architecture and training process. The architecture contains a symbol detector, a graph encoder and a transformer decoder. The red and blue arrows indicate the visual and language pre-training process respectively. The black arrows indicate the downstream fine-tuning process.</figcaption>
+</figure>
 
 ## Results
 | Method | CROHME 2014 ExpRate↑ | CROHME 2014 ≤1↑ | CROHME 2014 ≤2↑ | CROHME 2016 ExpRate↑ | CROHME 2016 ≤1↑ | CROHME 2016 ≤2↑ | CROHME 2019 ExpRate↑ | CROHME 2019 ≤1↑ | CROHME 2019 ≤2↑ |
