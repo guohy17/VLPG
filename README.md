@@ -5,7 +5,11 @@
 </div>
 
 ## Introduction
-Vision-language pre-training models have shown promise in improving various downstream tasks. However, handwritten mathematical expression recognition (HMER), as a typical structured learning problem, can hardly benefit from existing pre-training methods due to the presence of multiple symbols and complicated structural relationships, as well as the scarcity of paired data. To overcome these problems, we propose a \textbf{V}ision-\textbf{L}anguage \textbf{P}re-training paradigm for \textbf{G}raph-based HMER (VLPG), utilizing unpaired mathematical expression images and LaTeX labels. 
+Vision-language pre-training models have shown promise in improving various downstream tasks. However, handwritten mathematical expression recognition (HMER), as a typical structured learning problem, can hardly benefit from existing pre-training methods due to the presence of multiple symbols and complicated structural relationships, as well as the scarcity of paired data. To overcome these problems, we propose a Vision-Language Pre-training paradigm for Graph-based HMER (VLPG), utilizing unpaired mathematical expression images and LaTeX labels. 
+
+Our HMER model is built upon a graph parsing method with superior explainability, which is enhanced by the proposed graph-structure aware transformer decoder.
+
+Based on this framework, the symbol localization pretext task and language modeling task are employed for vision-language pre-training. First, we make use of unlabeled mathematical symbol images to pre-train the visual feature extractor through the localization pretext task, improving the symbol localization and discrimination ability. Second, the structure understanding module is pre-trained using LaTeX corpora through language modeling task, which promotes the model's context comprehension ability. The pre-trained model is fine-tuned and aligned on the downstream HMER task using benchmark datasets. 
 
 
 ## Framework
