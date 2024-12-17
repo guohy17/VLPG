@@ -1,0 +1,32 @@
+# COCO 2017 dataset http://cocodataset.org
+# Train command: python train.py --data coco.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco
+#     /yolov5
+
+
+# download command/URL (optional)
+#download: bash data/scripts/get_coco.sh
+# CROHME2014 1024 * 256
+# train 8821
+# test 1147
+# val 980
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+unsup_train: /data3/hyguo/japan_dataset/AllPngs_Japan_with_DA_resize/
+train: /lustre/data_sharing/jmtang/crohme2014/images/train
+val: /lustre/data_sharing/jmtang/crohme2014/images/val
+test: /lustre/data_sharing/jmtang/crohme2014/images/test
+test2019: /lustre/data_sharing/jmtang/crohme2014/images/test2019
+
+# number of classes
+nc: 1
+
+# class names
+names: [ 'Symbol' ]
+
+# Print classes
+# with open('data/coco.yaml') as f:
+#   d = yaml.load(f, Loader=yaml.FullLoader)  # dict
+#   for i, x in enumerate(d['names']):
+#     print(i, x)
